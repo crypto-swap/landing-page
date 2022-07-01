@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@crypto-swap/sdk": "^1.0.4",
+    "@ethersproject/providers": "^5.6.8",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@metamask/providers": "^8.1.1",
+    "@types/node": "^18.0.0",
+    "@web3-react/core": "^8.0.29-beta.0",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/metamask": "^8.0.24-beta.0",
+    "ethers": "^5.6.4",
+    "headlessui": "^0.0.0",
+    "heroicons": "^1.0.6",
+    "lodash": "^4.17.21",
+    "next": "^12.1.6",
+    "next-themes": "^0.1.1",
+    "parse-json": "^6.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/parse-json": "^4.0.0",
+    "@types/prop-types": "^15.7.5",
+    "@types/react": "^18.0.1",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "postcss-preset-env": "^7.4.3",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.3"
+  }
+}

@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: 
+
+User-agent: Googlebot-Image
+Disallow: /coins
+Disallow: /coins/
+Disallow: /coins/*
