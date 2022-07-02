@@ -7,7 +7,8 @@ import Footer from '../components/Footer';
 import ImageList from '../components/Tutorial/imagelist';
 import Information from '../components/Tutorial/information';
 
-const Home: NextPage = () => {
+const Tutorials = () => {
+
   return (
     <div className="relative h-screen overflow-x-hidden bg-bg-light font-[Montserrat] text-text-light dark:bg-bg-dark dark:text-text-dark">
       <Head>
@@ -60,4 +61,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Tutorials;
