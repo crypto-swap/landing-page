@@ -26,22 +26,6 @@ const TeamLayout = () => {
                         <SingleTeamMember name="Anonymous ZK" title="Smart Contract Dev" text="somewhere in LA..." photo="/team-image/anonymous_dev.png" />
                     </div>
 
-                    <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
-                        <SingleTeamMember name="Batman" title="Digital Graphics" text="UCSD ICAM" photo="/team-image/batman.png" />
-                    </div>
-
-                    <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
-                        <SingleTeamMember name="Katie" title="Digital Artist" text="UCI" photo="/team-image/katie.png" />
-                    </div>
-
-                    <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
-                        <SingleTeamMember name="Bobby" title="Developer" text="no data" photo="/team-image/botao.jpg" />
-                    </div>
-
-                    <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
-                        <SingleTeamMember name="Peter" title="Developer" text="no data" photo="/team-image/qianli.png" />
-                    </div>
-
                 </div>
             </div>
         </div>
