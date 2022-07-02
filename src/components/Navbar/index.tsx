@@ -6,11 +6,8 @@ import WalletPopup from '../Popups/WalletPopup';
 import NetworksPopup from '../Popups/NetworksPopup';
 import { PopupContext } from '../../context/PopupProvider';
 import { networks } from '../Popups/NetworksPopup';
-import { hooks } from '../../connectors/metaMask';
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-const { useChainId, useIsActive } = hooks;
 
 const Navbar = () => {
   // defaults to dark mode
@@ -19,8 +16,6 @@ const Navbar = () => {
     setTheme('dark');
   }
 
-  const chainIsCorrect = useChainId() === 280;
-  const walletConnected = useIsActive();
   const { setWalletPopupOpen, setNetworksPopupOpen } = useContext(PopupContext);
 
   function openWalletPopup() {
@@ -81,18 +76,12 @@ const Navbar = () => {
               onClick={openNetworksPopup}
             >
               <Image
-                src={
-                  chainIsCorrect
-                    ? networks[0].image
-                    : 'https://cryptoswap.org/assets/networks.svg'
-                }
+                src={'https://cryptoswap.org/assets/networks.svg'}
                 width={20}
                 height={20}
               />
               <span>&nbsp;</span>
-              {chainIsCorrect
-                ? networks[0].name.split(' ')[0]
-                : 'Networks'}
+              {'Networks'}
               <span className="hide-medium">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,21 +97,6 @@ const Navbar = () => {
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </span>
-            </button>
-          </div>
-
-          <div className="wallet">
-            <button
-              id="connect-wallet"
-              onClick={openWalletPopup}
-              className="wallet-button-1 wallet-button-2"
-            >
-              <p className="wallet-button-text hide-small">
-                {walletConnected ? 'Wallet Connected' : 'Connect to a wallet'}
-              </p>
-              <p className="wallet-button-text show-small">
-                {walletConnected ? 'Wallet Connected' : 'Connect wallet'}
-              </p>
             </button>
           </div>
 
