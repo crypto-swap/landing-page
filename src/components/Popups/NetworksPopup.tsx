@@ -56,7 +56,6 @@ const NetworksPopup = () => {
             disabled={!status}
             key={image}
             onClick={() => {
-              connect();
               closeModal();
               changeSubdomain(subdomain, status); 
             }}

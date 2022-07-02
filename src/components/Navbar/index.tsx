@@ -2,7 +2,6 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
-import WalletPopup from '../Popups/WalletPopup';
 import NetworksPopup from '../Popups/NetworksPopup';
 import { PopupContext } from '../../context/PopupProvider';
 import { networks } from '../Popups/NetworksPopup';
@@ -30,7 +29,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <WalletPopup />
       <NetworksPopup />
       <div className="navbar-col-1 cursor-pointer">
         <Link href="/">
