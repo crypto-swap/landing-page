@@ -39,14 +39,9 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-col-2">
-        <div className={"navbar-link-item" + (router.pathname.startsWith("/swap") ? " !opacity-100 " : "")}>
-          <Link href="/swap" >
-            Swap
-          </Link>
-        </div>
-        <div className={"navbar-link-item" + (router.pathname.startsWith("/pool") ? " !opacity-100 " : "")}>
-          <Link href="/pool" >
-            Pool
+        <div className={"navbar-link-item" + (router.pathname.startsWith("/tutorial") ? " !opacity-100 " : "")}>
+          <Link href="/tutorial" >
+            Tutorial
           </Link>
         </div>
         <div className={"navbar-link-item" + (router.pathname.startsWith("/team") ? " !opacity-100 " : "")}>
@@ -61,8 +56,18 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          Documentation
+        </a>
+        
+        <a
+          href={'https://cryptoswap.org/whitepaper.pdf'}
+          className="navbar-link-item"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Whitepaper
         </a>
+
       </div>
 
       <div className="navbar-col-3">
