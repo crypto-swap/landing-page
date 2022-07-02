@@ -26,14 +26,14 @@ const Home: NextPage = () => {
   
         <Navbar />
   
-        <div>
-            <Link href='https://zksync.cryptoswap.org'>
-                <button>
-                    zkSync Crypto Swap 
-                </button>
-            </Link>
-
+        <div className="mb-16">
+            <button>
+                <Link href='https://zksync.cryptoswap.org'>
+                    Click this text to access zkSync Crypto Swap 
+                </Link>
+            </button>
         </div>
+
         <div className="mb-16"></div>
         <Footer />
       </div>
