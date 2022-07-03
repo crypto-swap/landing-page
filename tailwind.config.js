@@ -58,7 +58,8 @@ module.exports = {
           '2px 2px 0px #2059d0, -2px -2px 0px #2c79ff',
         'blue-button-hover':
           'inset 3px 3px 0px #2059d0, inset -3px -3px 0px #2c79ff',
-        'purple-gradient-button': 'inset .2rem .2rem 1rem #7E05F0, inset -.2rem -.2rem 1rem #5b0eeb',
+        'purple-gradient-button': 
+          'inset .2rem .2rem 1rem #7E05F0, inset -.2rem -.2rem 1rem #5b0eeb',
         'purple-gradient-button-hover': 
           '6px 6px 8px 0px #171a29, -6px -6px 8px 0 #171a29 , inset -4px -4px 6px 0px rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .4)',
       },
