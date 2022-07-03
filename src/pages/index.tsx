@@ -1,12 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import Tutorial from '../components/Tutorial/tutorial';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ImageList from '../components/Tutorial/imagelist';
-import Information from '../components/Tutorial/information';
 import Link from 'next/link';
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
     return (
@@ -26,7 +24,7 @@ const Home: NextPage = () => {
   
         <Navbar />
   
-        <div className="mb-16">
+        <div>
             <button>
                 <Link href='https://zksync.cryptoswap.org'>
                     Click this text to access zkSync Crypto Swap 
@@ -34,7 +32,6 @@ const Home: NextPage = () => {
             </button>
         </div>
 
-        <div className="mb-16"></div>
         <Footer />
       </div>
     );

@@ -7,6 +7,7 @@ import { PopupContext } from '../../context/PopupProvider';
 import { networks } from '../Popups/NetworksPopup';
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from '../../styles/Navbar.module.scss'
 
 const Navbar = () => {
   // defaults to dark mode
