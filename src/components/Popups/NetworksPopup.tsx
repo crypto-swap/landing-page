@@ -26,7 +26,7 @@ export const networks: Network[] = [
   {
     name: 'Atomic Swaps',
     subdomain: 'atomic',
-    image: 'https://cryptoswap.org/network_icons/atomic_swaps.jpg',
+    image: 'https://cryptoswap.org/assets/networks.svg',
     status: false,
   },
 ];
