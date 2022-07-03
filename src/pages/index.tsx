@@ -8,7 +8,7 @@ import animate from '../styles/HomeAnimation.module.scss'
 
 const styles = {
   wrapper : 'flex justify-center align-center my-5',
-  zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl',
+  zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl shadow-purple-gradient-button hover:shadow-purple-gradient-button-hover',
   buttonText: 'relative block h-full w-full',
 }
 
