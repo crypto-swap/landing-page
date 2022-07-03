@@ -56,7 +56,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Documentation
+          Docs
         </a>
         
         <a
