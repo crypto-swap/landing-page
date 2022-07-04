@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import LandingAnimation from '../components/Animations/LandingAnimation';
 
 const styles = {
   wrapper : 'flex justify-center items-center p-8',
@@ -42,7 +43,7 @@ const Home: NextPage = () => {
         </Link>
 
         <div className={styles.animationWrapper}>
-          <canvas id="main"></canvas>
+          <LandingAnimation/>
         </div>
       </div>
 
