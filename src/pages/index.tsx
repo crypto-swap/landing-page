@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import animation from '../styles/HomeAnimation.module.scss'
 
 const styles = {
   wrapper : 'flex justify-center items-center p-8',
