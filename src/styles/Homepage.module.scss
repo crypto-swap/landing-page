@@ -42,6 +42,27 @@
     }
 }
 
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
 
 .top {
     position: absolute;
@@ -69,15 +90,23 @@
         left: 0;
         width: 200px;
         height: 200px;
-        background: #0f0;
+        background: #1B1E31;
         transform: translateZ(-300px);
         filter: blur(20px);
-        box-shadow: 0 0 120px rgba(0, 255, 0, .2),
-        0 0 200px rgba(0, 255, 0, .4),
-        0 0 300px rgba(0, 255, 0, .6),
-        0 0 400px rgba(0, 255, 0, .8),
-        0 0 500px rgba(0, 255, 0, 1);
+        box-shadow: 0 0 120px #1F2237,
+        0 0 200px #343859,
+        0 0 300px #4a5180,
+        0 0 400px #6b74b5,
+        0 0 500px #939eed;
+        // background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        -webkit-animation: rainbow 10s ease infinite;
+        -z-animation: rainbow 10s ease infinite;
+        -o-animation: rainbow 10s ease infinite;
+        animation: rainbow 10s ease infinite;
+        background-size: 600% 100%;
+
     }
+
     
     .logo {
         font-size: 2em;
