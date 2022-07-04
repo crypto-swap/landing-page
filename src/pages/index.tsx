@@ -13,7 +13,11 @@ const style = {
   zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl shadow-purple-gradient-button hover:shadow-purple-gradient-button-hover',
   buttonText: 'relative block h-full w-full',
   animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5',
-  
+  cryptoswapContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-1',
+  starknetContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-2',
+  zksyncContainer: 'flex justify-center items-center w-full h-full flex-col p-10',
+  topText: 'text-3xl',
+  csText: 'text-2xl',
 }
 
 const Home: NextPage = () => {
@@ -38,6 +42,7 @@ const Home: NextPage = () => {
       <div className={style.wrapper}>
         
         <div className={style.row1}>
+          
           <Link href='https://zksync.cryptoswap.org'>
             <button className={style.zksyncButton}>
               <span className={style.buttonText}>
@@ -51,10 +56,30 @@ const Home: NextPage = () => {
 
             </div>
             <div>
-              <span style={{"--i": 0} as React.CSSProperties}></span>
-              <span style={{"--i": 1} as React.CSSProperties}></span>
-              <span style={{"--i": 2} as React.CSSProperties}></span>
-              <span style={{"--i": 3} as React.CSSProperties}></span>
+              <span style={{"--i": 0} as React.CSSProperties}>              
+                <div className={style.zksyncContainer}>
+                <img className={styles.logo} src='https://cryptoswap.org/network_icons/zksync_logo.svg'></img>
+                <text className={style.topText}>zkSync</text>
+                </div>
+              </span>
+              <span style={{"--i": 1} as React.CSSProperties}>              
+                <div className={style.cryptoswapContainer}>
+                <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
+                <text className={style.csText}>CryptoSwap</text>
+                </div>
+              </span>
+              <span style={{"--i": 2} as React.CSSProperties}>              
+                <div className={style.starknetContainer}>
+                  <img className={styles.logo} src='https://cryptoswap.org/network_icons/starknet_logo.png'></img>
+                  <text className={style.csText}>StarkNet</text>
+                </div>
+              </span>
+              <span style={{"--i": 3} as React.CSSProperties}>              
+                <div className={style.cryptoswapContainer}>
+                <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
+                <text className={style.csText}>CryptoSwap</text>
+                </div>
+              </span>
             </div>
           </div>
         </div>
