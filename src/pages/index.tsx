@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useTheme } from 'next-themes';
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
@@ -22,6 +23,9 @@ const style = {
 
 const Home: NextPage = () => {
 
+  // defaults to dark mode
+  const { theme, setTheme } = useTheme();
+
   return (
     <div className="relative h-screen overflow-x-hidden bg-bg-light font-[Montserrat] text-text-light dark:bg-bg-dark dark:text-text-dark">
       <Head>
@@ -40,7 +44,7 @@ const Home: NextPage = () => {
       <Navbar />
 
       <div className={style.wrapper}>
-        
+
         <div className={style.row1}>
 
           <Link href='https://zksync.cryptoswap.org'>
@@ -52,9 +56,10 @@ const Home: NextPage = () => {
           </Link>
 
           <div className={styles.cube}>
-            <div className={styles.top}>
 
-            </div>
+            {theme === 'dark' ? ( <div className={styles.top}> </div>) : ( <div className={styles.topLight}> </div>)}
+
+              
             <div>
               <span style={{"--i": 0} as React.CSSProperties}>              
                 <div className={style.zksyncContainer}>
@@ -82,7 +87,7 @@ const Home: NextPage = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div>     
       </div>
 
       <Footer />

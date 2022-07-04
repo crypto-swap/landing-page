@@ -1,3 +1,24 @@
+.glassmorphism-light-1,
+.glassmorphism-dark-1{
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+  	-webkit-backdrop-filter: blur(5px);
+	}
+
+.glassmorphism-dark-1 {
+    border: 2px solid rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
+}
+
+
 .cube {
     position: relative;
     width: 200px;
@@ -104,11 +125,43 @@
         -o-animation: rainbow 10s ease infinite;
         animation: rainbow 10s ease infinite;
         background-size: 600% 100%;
-
-    }
-
-    
-    .logo {
-        font-size: 2em;
     }
 }
+
+.topLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #1F2237;
+    transform: rotateX(90deg) translateZ(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        transform: translateZ(-300px);
+        filter: blur(20px);
+        background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        -webkit-animation: rainbow 10s ease infinite;
+        -z-animation: rainbow 10s ease infinite;
+        -o-animation: rainbow 10s ease infinite;
+        animation: rainbow 10s ease infinite;
+        background-size: 600% 100%;
+    }
+}
+
