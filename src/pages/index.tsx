@@ -11,13 +11,13 @@ const style = {
   wrapper : 'p-8 box-border',
   row1 : 'flex justify-center items-center flex-col gap-10',
   zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl shadow-purple-gradient-button hover:shadow-purple-gradient-button-hover',
-  buttonText: 'relative block h-full w-full',
+  buttonText: 'relative block h-full w-full text-white',
   animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5',
   cryptoswapContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-1',
   starknetContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-2',
   zksyncContainer: 'flex justify-center items-center w-full h-full flex-col p-10',
-  topText: 'text-3xl',
-  csText: 'text-2xl',
+  topText: 'text-3xl text-white',
+  csText: 'text-2xl text-white',
 }
 
 const Home: NextPage = () => {
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
       <div className={style.wrapper}>
         
         <div className={style.row1}>
-          
+
           <Link href='https://zksync.cryptoswap.org'>
             <button className={style.zksyncButton}>
               <span className={style.buttonText}>
