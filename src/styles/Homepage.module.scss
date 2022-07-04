@@ -1,24 +1,3 @@
-.glassmorphism-light-1,
-.glassmorphism-dark-1{
-    width: 100%;
-    max-width: 350px;
-    height: 250px;
-    margin: 20px;
-    border: 2px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.4);
-    border-radius: 10px;
-    z-index: 2;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-  	-webkit-backdrop-filter: blur(5px);
-	}
-
-.glassmorphism-dark-1 {
-    border: 2px solid rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.4);
-}
-
-
 .cube {
     position: relative;
     width: 200px;
