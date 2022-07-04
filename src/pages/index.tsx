@@ -5,12 +5,15 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import styles from '../styles/Homepage.module.scss'
 
-const styles = {
-  wrapper : 'flex justify-center items-center p-8',
+const style = {
+  wrapper : 'p-8 box-border',
+  row1 : 'flex justify-center items-center flex-col gap-10',
   zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl shadow-purple-gradient-button hover:shadow-purple-gradient-button-hover',
   buttonText: 'relative block h-full w-full',
-  animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5'
+  animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5',
+  
 }
 
 const Home: NextPage = () => {
@@ -32,17 +35,28 @@ const Home: NextPage = () => {
 
       <Navbar />
 
-      <div className={styles.wrapper}>
-        <Link href='https://zksync.cryptoswap.org'>
-          <button className={styles.zksyncButton}>
-            <span className={styles.buttonText}>
-              Click this button to access zkSync Crypto Swap 
-            </span>
-          </button>
-        </Link>
+      <div className={style.wrapper}>
+        
+        <div className={style.row1}>
+          <Link href='https://zksync.cryptoswap.org'>
+            <button className={style.zksyncButton}>
+              <span className={style.buttonText}>
+                Click this button to access zkSync Crypto Swap 
+              </span>
+            </button>
+          </Link>
 
-        <div className={styles.animationWrapper}>
-          
+          <div className={styles.cube}>
+            <div className={styles.top}>
+
+            </div>
+            <div>
+              <span style={{"--i": 0} as React.CSSProperties}></span>
+              <span style={{"--i": 1} as React.CSSProperties}></span>
+              <span style={{"--i": 2} as React.CSSProperties}></span>
+              <span style={{"--i": 3} as React.CSSProperties}></span>
+            </div>
+          </div>
         </div>
       </div>
 
