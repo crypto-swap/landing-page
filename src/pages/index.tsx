@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.cube}>
 
-            {theme === 'dark' ? ( <div className={styles.top}/> ) : ( <div className={styles.topLight}/> )}
+            { theme === 'dark' ? ( <div className={styles.top}/> ) : ( <div className={styles.topLight}/> ) }
 
             <div>
               <span style={{"--i": 0} as React.CSSProperties}>              
