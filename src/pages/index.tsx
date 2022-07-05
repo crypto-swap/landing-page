@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               <p></p>
               1.5 weeks (approx)
             </text>
-            <Link href='https://zksync.cryptoswap.org'>
+            <Link href='https://zksync-cryptoswap.4everland.app'>
               <button className={style.zksyncButton}>
                 <span className={style.buttonText}>
                   Enter App
