@@ -9,9 +9,11 @@ import Link from 'next/link';
 import styles from '../styles/Homepage.module.scss'
 
 const style = {
-  wrapper : 'p-8 box-border',
-  row1 : 'flex justify-center items-center flex-col gap-10',
-  zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] p-5 rounded-2xl shadow-purple-gradient-button hover:shadow-purple-gradient-button-hover',
+  wrapper : 'p-16 box-border',
+  row1 : 'flex justify-center items-center flex-col md:flex-row md:gap-48 ',
+  zksync : 'flex flex-col justify-center items-center gap-2 bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark mb-16 p-10 z-10',
+  zksyncText : 'mb-5 text-center font-semibold text-[#3E3E3E] dark:text-[#F7F7F8]',
+  zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] px-5 py-3 rounded-2xl shadow-purple-gradient-button',
   buttonText: 'relative block h-full w-full text-white',
   animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5',
   cryptoswapContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-1',
@@ -47,14 +49,21 @@ const Home: NextPage = () => {
 
         <div className={style.row1}>
 
-          <Link href='https://zksync.cryptoswap.org'>
-            <button className={style.zksyncButton}>
-              <span className={style.buttonText}>
-                Click this button to access zkSync Crypto Swap 
-              </span>
-            </button>
-          </Link>
-
+          <div className={style.zksync}>
+            <Image src={'https://cryptoswap.org/network_icons/zksync_logo.svg'} height={100} width={100}/>
+            <text className={style.zksyncText}>
+              zkSync Testnet DEX
+              <p></p>
+              1.5 weeks (approx)
+            </text>
+            <Link href='https://zksync.cryptoswap.org'>
+              <button className={style.zksyncButton}>
+                <span className={style.buttonText}>
+                  Enter App
+                </span>
+              </button>
+            </Link>
+          </div>
           <div className={styles.cube}>
 
             {theme === 'dark' ? ( <div className={styles.top}> </div>) : ( <div className={styles.topLight}> </div>)}
