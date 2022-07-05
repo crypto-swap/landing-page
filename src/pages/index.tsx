@@ -31,6 +31,8 @@ const Home: NextPage = () => {
     setTheme('dark');
   }
 
+  // we need to use getStaticProps to prerender the page to show javascript beforehand 
+
   return (
     <div className="relative h-screen overflow-x-hidden bg-bg-light font-[Montserrat] text-text-light dark:bg-bg-dark dark:text-text-dark">
       <Head>
@@ -69,9 +71,8 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.cube}>
 
-            {theme === 'dark' ? ( <div className={styles.top}/>) : ( <div className={styles.topLight}/> )}
+            {theme === 'dark' ? ( <div className={styles.top}/> ) : ( <div className={styles.topLight}/> )}
 
-              
             <div>
               <span style={{"--i": 0} as React.CSSProperties}>              
                 <div className={style.zksyncContainer}>
