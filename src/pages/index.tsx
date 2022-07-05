@@ -27,6 +27,9 @@ const Home: NextPage = () => {
 
   // defaults to dark mode
   const { theme, setTheme } = useTheme();
+  if (theme === 'system') {
+    setTheme('dark');
+  }
 
   return (
     <div className="relative h-screen overflow-x-hidden bg-bg-light font-[Montserrat] text-text-light dark:bg-bg-dark dark:text-text-dark">
@@ -66,7 +69,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.cube}>
 
-            {theme === 'dark' ? ( <div className={styles.top}> </div>) : ( <div className={styles.topLight}> </div>)}
+            {theme === 'dark' ? ( <div className={styles.top}/>) : ( <div className={styles.topLight}/> )}
 
               
             <div>
