@@ -71,7 +71,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.cube}>
 
-            {theme === 'dark' ? ( <div className={styles.top}/> ) : ( <div className={styles.topLight}/> )}
+            {theme === 'light' ? ( <div className={styles.topLight}/> ) : ( <div className={styles.top}/> )}
 
             <div>
               <span style={{"--i": 0} as React.CSSProperties}>              
