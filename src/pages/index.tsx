@@ -16,7 +16,7 @@ const style = {
   zksyncButton : 'bg-[rgb(96,9,240)] bg-gradient-to-r from-[rgba(96,9,240,1)] to-[rgba(129,5,240,1)] px-5 py-3 rounded-2xl shadow-purple-gradient-button',
   buttonText: 'relative block h-full w-full text-white',
   animationWrapper : 'flex justify-center items-center flex-row flex-wrap mt-5',
-  cryptoswapContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-1',
+  cryptoswapContainer: 'flex justify-center items-center flex-col w-full h-full p-10 gap-1',
   starknetContainer: 'flex justify-center items-center w-full h-full flex-col p-10 gap-2',
   zksyncContainer: 'flex justify-center items-center w-full h-full flex-col p-10',
   topText: 'text-3xl text-white',
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             <text className={style.zksyncText}>
               zkSync Testnet DEX
               <p></p>
-              1.5 weeks (approx)
+              (coming soon)
             </text>
             <Link href='https://zksync.cryptoswap.org'>
               <button className={style.zksyncButton}>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               <span style={{"--i": 1} as React.CSSProperties}>              
                 <div className={style.cryptoswapContainer}>
                 <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
-                <text className={style.csText}>Crypto Swap</text>
+                <text className={style.csText}>Crypto&nbsp;Swap</text>
                 </div>
               </span>
               <span style={{"--i": 2} as React.CSSProperties}>              
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               <span style={{"--i": 3} as React.CSSProperties}>              
                 <div className={style.cryptoswapContainer}>
                 <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
-                <text className={style.csText}>Crypto Swap</text>
+                <text className={style.csText}>Crypto&nbsp;Swap</text>
                 </div>
               </span>
             </div>

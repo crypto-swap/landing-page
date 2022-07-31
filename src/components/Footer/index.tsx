@@ -54,7 +54,7 @@ const Footer = () => {
             </a>
           </Link>
         </div>
-        <p className="w-full text-center  font-medium">© CryptoSwap 2022</p>
+        <p className="w-full text-center  font-medium">© Crypto Swap 2022</p>
       </div>
       <div className="space-y-3 pt-6 py-3 lg:py-0 lg:pt-0">
         <div className="text-xl font-semibold"> About Us </div>
