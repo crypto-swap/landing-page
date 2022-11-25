@@ -12,7 +12,7 @@ const TeamLayout = () => {
 
 
                     <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
-                        <SingleTeamMember name="Calvin" title="Developer" text="Caltech CS" photo="/team-image/calvin.png" />
+                        <SingleTeamMember name="Calvin" title="Developer" text="" photo="/team-image/calvin.png" />
                     </div>
 
                     <div className="bg-bg-card-light dark:bg-bg-card-dark rounded-2xl shadow-card dark:shadow-card-dark">
