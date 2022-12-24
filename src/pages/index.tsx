@@ -36,9 +36,9 @@ const Home: NextPage = () => {
   return (
     <div className="relative h-screen overflow-x-hidden bg-bg-light font-[Montserrat] text-text-light dark:bg-bg-dark dark:text-text-dark">
       <Head>
-        <title>Crypto Swap</title>
-        <meta name="description" content="Crypto Swap is a very efficient simple DEX on zkSync (Swap, Pool, Liquidity Options, and Generate). No presale, fully decentralized, and community-driven." />
-        <meta key="twitter:description" name="twitter:description" content="Crypto Swap" />
+        <title>CryptoSwap</title>
+        <meta name="description" content="CryptoSwap is a very efficient simple DEX on zkSync (Swap, Pool, Liquidity Options, and Generate). No presale, fully decentralized, and community-driven." />
+        <meta key="twitter:description" name="twitter:description" content="CryptoSwap" />
         <link rel="icon" href="/icons/black_logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="canonical" href="https://cryptoswap.org" />
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               <span style={{"--i": 1} as React.CSSProperties}>              
                 <div className={style.cryptoswapContainer}>
                 <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
-                <text className={style.csText}>Crypto&nbsp;Swap</text>
+                <text className={style.csText}>CryptoSwap</text>
                 </div>
               </span>
               <span style={{"--i": 2} as React.CSSProperties}>              
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               <span style={{"--i": 3} as React.CSSProperties}>              
                 <div className={style.cryptoswapContainer}>
                 <img className={styles.logo} src='https://cryptoswap.org/icons/black_logo.svg'></img>
-                <text className={style.csText}>Crypto&nbsp;Swap</text>
+                <text className={style.csText}>CryptoSwap</text>
                 </div>
               </span>
             </div>
