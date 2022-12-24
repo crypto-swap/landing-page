@@ -14,7 +14,6 @@ module.exports = {
     return {
       '/' : { page: '/' },
       '/tutorial' : { page: '/tutorial' },
-      '/team' : { page: '/team'},
     }
   },
 }
