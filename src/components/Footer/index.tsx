@@ -60,8 +60,8 @@ const Footer = () => {
         <div className="text-xl font-semibold"> About Us </div>
         <div className="w-full space-y-2 text-center text-base font-semibold text-font-blue">
           <p>
-            <Link href="/team">
-              <a>Team</a>
+            <Link href="/whitepaper.pdf">
+              <a target="_blank">Whitepaper</a>
             </Link>
           </p>
           <p>
@@ -74,11 +74,7 @@ const Footer = () => {
       <div className="space-y-3 lg:py-0">
         <div className="text-xl font-semibold flex justify-center"> Resources </div>
         <div className="w-full text-center space-y-2.5 text-base font-semibold text-font-blue">
-          <p>
-            <Link href="/whitepaper.pdf">
-              <a target="_blank">Whitepaper</a>
-            </Link>
-          </p>
+
           <p>
             <Link href="https://docs.cryptoswap.org">
               <a>Documentation</a>
