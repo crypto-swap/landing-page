@@ -5,7 +5,6 @@ import Tutorial from '../components/Tutorial/tutorial';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ImageList from '../components/Tutorial/imagelist';
-import Information from '../components/Tutorial/information';
 
 const Tutorials = () => {
 
@@ -52,9 +51,6 @@ const Tutorials = () => {
         <Tutorial />
       </div>
 
-      <div className="relative flex flex-col items-center justify-center place-items-center  bg-intro-background z-2 bg-no-repeat bg-cover pt-10" >
-        <Information />
-      </div>
       <div className="mb-16"></div>
       <Footer />
     </div>
